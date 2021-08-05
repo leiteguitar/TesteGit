@@ -4,7 +4,7 @@ if (!a.Contains("new_pis") || !a.Contains("new_irpj") || !a.Contains("new_cofins
                 // service.Update em Account dos vlores de impostos
                 if (a.Contains("accountid"))
                 {
-                    Entity account = new Entity("contact");
+                    Entity account = new Entity("permissions");
                     account.Id = a.Id;
                     account["new_pis"] = 0.65m;
                     account["new_irpj"] = 1.50m;
